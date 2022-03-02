@@ -1,0 +1,179 @@
+  501  mkdir planets
+  502  ls
+  503  cd planets
+  504  git init
+  505  ls
+  506  ls -a
+  507  git st
+  508  pwd
+  509  echo "Red Panet's suitability" > mars.txt
+  510  nano mars.txt
+  511  ls
+  512  cat mars.txt
+  513  git st
+  514  git add mars.txt
+  515  git st
+  516  git commit -m "First commit" mars.txt
+  517  git st
+  518  mkdir moons
+  519  cd moons
+  520  git init
+  521  rm -fr .git
+  522  git st
+  523  git rm -fr .git
+  524  git st
+  525  ls
+  526  ls -a
+  527  pwd
+  528  cd planets
+  529  cd ..
+  530  cd .
+  531  ls
+  532  ls -a
+  533  git st
+  534  git log
+  535  cat mars.txt
+  536  nano mars.txt
+  537  git status
+  538  git diff
+  539  git add mars.txt
+  540  git commit -m "Add concerns about effects of Mars"
+  541  nano mars.txt
+  542  git diff
+  543  git add mars.txt
+  544  git diff
+  545  git --diff -p
+  546  git diff --p
+  547  git diff --staged
+  548  git commit -m "Discuss concerns about Mars' climate for Mummy"
+  549  git st
+  550  history
+  551  git log
+  552  git log -1
+  553  git log --oneline
+  554  git log --oneline --graph --all --decorate
+  555  mkdir directory
+  556  git st
+  557  git add directory
+  558  git st
+  559  ls
+  560  git add 1
+  561  git st
+  562  ls
+  563  git log
+  564  nano mars.txt
+  565  nano mars.txt
+  566  echo "Venus is a nice planet and I definitely should consider it as a base" > venus.txt
+  567  git st
+  568  git add .
+  569  git commit -m "Write plans to start a base on Venus"
+  570  git log
+  571  git log --format=full
+  572  ls
+  573  echo "Vlad's bio" > me.txt
+  574  git add me.txt
+  575  git commit -m "Vlad's initial bio"
+  576  nano me.txt
+  577  git add me.txt
+  578  git commit -m "Update Vlad's bio" --author "Frank N. Stein <franky@monster.com>"
+  579  git st
+  580  nano mars.txt
+  581  gti diff HEAD mars.txt
+  582  git diff HEAD mars.txt
+  583  git diff HEAD ~1 mars.txt
+  584  git diff HEAD~1 mars.txt
+  585  git diff HEAD~2 mars.txt
+  586  git diff HEAD~3 mars.txt
+  587  git diff HEAD~4 mars.txt
+  588  git log
+  589  git diff 3c0e958c7b22fdee283ff58281f6b709e9376068 mars.txt
+  590  git diff 3c0e mars.txt
+  591  nano mars.txt
+  592  gti st
+  593  git st
+  594  git checkout HEAD mars.txt
+  595  cat mars.txt
+  596  git log
+  597  git checkout 5596f mars.txt
+  598  cat mars.txt
+  599  git checkout 3c0e958c7b mars.txt
+  600  cat mars.txt
+  601  git st
+  602  git checkout -f master mars.txt
+  603  cat mars.txt
+  604  git checkout 3c0e958c7b mars.txt
+  605  git checkout master
+  606  git st
+  607  git checkout HEAD mars.txt
+  608  cat mars.txt
+  609  git st
+  610  git log
+  611  gti revert f1a51857
+  612  git revert f1a51857
+  613  fit st
+  614  git st
+  615  git commit -m "nuevo mensaje despues de revert"
+  616  git revert f1a51857
+  617  git log
+  618  nano venus.txt
+  619  git add venus.txt
+  620  nano venus.txt
+  621  git commit -m "Comment on Venus as an unsuitable base"
+  622  git checkout HEAD venus.txt
+  623  cat venus.txt
+  624  cd planets
+  625  git diff HEAD~3 venus.txt
+  626  git diff HEAD~3 mars.txt
+  627  git log
+  628  git diff 20c847ae mars.txt
+  629  nano mars.txt
+  630  git checkout HEAD mars.txt
+  631  gti log
+  632  git log
+  633  gti st
+  634  git st
+  635  git log mars.txt
+  636  git log --patch mars.txt
+  637  git log --patch HEAD~3 *.txt
+  638  mkdir results
+  639  touch a.dat b.dat c.dat results/a.out results/b.out
+  640  git st
+  641  cd .
+  642  touch .gitignore
+  643  cat .gitignore
+  644  nano .gitignore
+  645  git st
+  646  git add .gitignore
+  647  git commit -m "Ignoramos *.dat y results/"
+  648  git add a.dat
+  649  git status --ignored
+  650  nano .gitignore
+  651  git status --ignored
+  652  cat
+  653  cat .gitignore
+  654  git add .gitignore
+  655  git commit -m "Ignoramos log_* y log*"
+  656  git status --ignored
+  657  git add log_01
+  658  touch log_01
+  659  ls
+  660  git add log_01
+  661  git add -f log_01
+  662  git st
+  663  cd directory/
+  664  ls
+  665  cd .
+  666  cd ..
+  667  nano .gitignore
+  668  git add .gitignore
+  669  git commit -m "Ignoramos un directorio"
+  670  git status --ignored
+  671  cat .gitignore
+  672  nano .gitignore
+  673  git add .gitignore
+  674  git commit -m "Ignarando archivos .data menos final.data"
+  675  git st
+  676  git remote add origin git@github.com:almelismora/examen.git
+  677  git branch -M main
+  678  git push -u origin main
+  679  history
