@@ -1,1 +1,4 @@
 Vlad's bio
+Name: Vlad
+Surname: Sushka
+Age: 37
